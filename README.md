@@ -1,98 +1,43 @@
-# z3r0ru135.me — Digital Universe
+# Aditya Raj // Cybersecurity Command Center
+### z3r0ru135.me — Z3R0_OS v2.4
 
-A futuristic fullstack personal website with fully animated 3D UI, built with Next.js 14, React, Three.js, Framer Motion, and TailwindCSS.
+A professional, high-density Cybersecurity Command Center dashboard built for Aditya Raj. Transitioned from a traditional portfolio to a utility-focused HUD (Heads-Up Display) for security researchers.
 
-## 🎨 Design System
+## 🎨 Design System: "Cyber Indigo & Electric Cyan"
+*   **Palette**: Deep Cobalt (`#0A0E1A`), Electric Cyan (`#00E5FF`), Ghost Violet (`#7B61FF`), and Plasma Pink (`#FF2D78`).
+*   **Aesthetic**: HUD-style modular layout with scanlines, reactive 3D wireframes, and high-density information display.
+*   **Typography**: Syncopate (Headers), Syne (Body), DM Mono (System Log).
 
-- **Font Display**: [Syncopate](https://fonts.google.com/specimen/Syncopate) — ultra-wide geometric, rarely used
-- **Font Body**: [Syne](https://fonts.google.com/specimen/Syne) — distinctive grotesque with personality
-- **Font Mono**: [DM Mono](https://fonts.google.com/specimen/DM+Mono) — characterful monospace
-- **Font Numbers**: [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue) — bold display numerals
-- **Primary Color**: `#C8FF00` Acid Lime — unique, vivid, memorable
-- **Secondary**: `#FF2D78` Plasma Pink · `#00E5FF` Ion Cyan · `#7B61FF` Ghost Violet · `#FF6B1A` Ember Orange
+## 🗂 Dashboard Modules
+*   **SYSTEM_OVERVIEW**: Identity verification and real-time operational status.
+*   **TOOLS_GATEWAY**: Integrated cryptographic toolkit (Hash generators, Password Forge, ASCII Renderer).
+*   **PROJECT_ASSETS**: Repository of active security tools like `z3r0-toolkit` and `Kryptos Keeper`.
+*   **INTEL_RESOURCES**: Security research log, CTF writeups, and technical blog.
+*   **USER_IDENTITY**: Verified credentials, skill matrix, and professional history.
 
-## 🚀 Quick Start
+## 🎮 Functional Features
+*   **Terminal (Ctrl + `)**: Functional hacker terminal with custom system commands.
+*   **Password Forge**: Cryptographically secure pass-key generator with entropy calculation.
+*   **Hash Inspector**: Real-time SHA-256 and SHA-512 digest generator utilizing Web Crypto API.
+*   **ASCII Pixel Renderer**: Custom pixel-font art generator for retro-style terminal output.
+*   **ARIA AI Assistant**: Integrated guide for system navigation and researcher intel.
 
-```bash
-# Install dependencies
-npm install
+## 🚀 Tech Stack
+*   **Framework**: Next.js 14 (App Router)
+*   **Logic**: React 18, TypeScript
+*   **Motion**: Framer Motion (HUD animations, module transitions)
+*   **3D Elements**: Three.js / React Three Fiber (Reactive wireframes)
+*   **Styling**: Vanilla CSS (Cyber HUD System)
 
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000)
-
-## 🗂 Project Structure
-
-```
-src/
-├── app/
-│   ├── api/
-│   │   ├── aria/route.ts       # AI Assistant API
-│   │   ├── projects/route.ts   # Projects data API
-│   │   └── blog/route.ts       # Blog posts API
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── 3d/
-│   │   └── Scene3D.tsx         # Three.js R3F scene
-│   ├── ai/
-│   │   └── AIAssistant.tsx     # Floating ARIA chatbot
-│   ├── sections/
-│   │   ├── HeroSection.tsx     # Landing with portals
-│   │   ├── ProjectsSection.tsx # Project cards
-│   │   ├── CyberLabSection.tsx # Security research hub
-│   │   ├── PlaygroundSection.tsx # Interactive experiments
-│   │   ├── BlogSection.tsx     # Article cards
-│   │   └── AboutSection.tsx    # Timeline & skills
-│   ├── terminal/
-│   │   └── Terminal.tsx        # Hacker terminal (Ctrl+`)
-│   └── ui/
-│       ├── Cursor.tsx          # Custom cursor FX
-│       ├── LoadingScreen.tsx   # Boot sequence
-│       ├── Navbar.tsx          # Navigation
-│       └── SecretOverlay.tsx   # Easter egg
-└── styles/
-    └── globals.css             # Full design system
-```
-
-## 🎮 Features
-
-| Feature | Details |
-|---------|---------|
-| **3D Scene** | R3F + Three.js particles, wireframe icosahedrons, floating tori, star field — all mouse-reactive |
-| **Terminal** | `Ctrl+`` to open · commands: `help`, `whoami`, `projects`, `cyberlab`, `skills`, `contact`, `blog`, `matrix`, `secret`, `clear` · history with ↑↓ · tab autocomplete |
-| **AI Assistant** | ARIA chatbot with keyword-based replies + `/api/aria` backend route |
-| **Playground** | Matrix rain (5-color cycle), Password Forge (crypto.getRandomValues), ASCII Art generator, SHA Hash inspector |
-| **Easter Egg** | Click `[ CLASSIFIED ]` in footer · or type `secret` in terminal |
-| **Custom Cursor** | Lagging ring + dot cursor with hover states |
-| **Animations** | Framer Motion page load, scroll-triggered sections, hover lifts, glitch text |
-
-## 🔌 API Routes
-
-| Route | Method | Description |
-|-------|--------|-------------|
-| `/api/aria` | POST `{ message }` | AI assistant response |
-| `/api/aria` | GET | Status check |
-| `/api/projects` | GET | All 6 projects |
-| `/api/blog` | GET | All 4 blog posts |
-
-## 🌐 Deploy
+## 🌐 Deployment
+The site is configured for **Static Export** and deployed via **GitHub Actions** to GitHub Pages.
 
 ```bash
-# Vercel (recommended)
-npx vercel
-
-# Or Docker
-docker build -t z3r0ru135 .
-docker run -p 3000:3000 z3r0ru135
+# Update live site
+git add .
+git commit -m "update logs"
+git push origin main
 ```
 
-## 📝 License
-
-MIT — build on it, break it, make it yours.
+---
+**OPERATIONAL STATUS: ACTIVE // ENCRYPTION: ENABLED**
