@@ -8,7 +8,7 @@ import HeroSection from './sections/HeroSection'
 import ProjectsSection from './sections/ProjectsSection'
 import CyberLabSection from './sections/CyberLabSection'
 import PlaygroundSection from './sections/PlaygroundSection'
-import BlogSection from './sections/BlogSection'
+import IntelSection from './sections/IntelSection'
 import AboutSection from './sections/AboutSection'
 import Terminal from './terminal/Terminal'
 import AIAssistant from './ai/AIAssistant'
@@ -40,7 +40,7 @@ export default function App() {
     { id: 'OVERVIEW',    label: 'SYSTEM_OVERVIEW', icon: '▣' },
     { id: 'UTILITIES',   label: 'TOOLS_GATEWAY',   icon: '▧' },
     { id: 'ASSETS',      label: 'PROJECT_ASSETS',  icon: '▤' },
-    { id: 'RESOURCES',   label: 'INTEL_RESOURCES', icon: '▨' },
+    { id: 'RESOURCES',   label: 'INTEL_MONITOR', icon: '▨' },
     { id: 'CREDENTIALS', label: 'USER_IDENTITY',   icon: '▩' },
   ]
 
@@ -103,9 +103,9 @@ export default function App() {
                 {activeModule === 'ASSETS'      && <ProjectsSection />}
                 {activeModule === 'RESOURCES'   && (
                   <>
-                    <CyberLabSection />
+                    <IntelSection />
                     <div className="divider" />
-                    <BlogSection />
+                    <CyberLabSection />
                   </>
                 )}
                 {activeModule === 'CREDENTIALS' && <AboutSection />}
